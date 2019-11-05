@@ -1,0 +1,4 @@
+def matDet(x):
+    mat=np.reshape(np.multiply(x,x),(32,32))
+    d = np.linalg.det(mat)
+    return(math.log10(abs(d/(32*32))))
