@@ -1,0 +1,14 @@
+function det_val=MatDet(data)
+eeg=data.*data;
+m=32;
+n=32;
+p=1;
+for i=1:m
+      for j=1:n
+            eeg1(i,j)=eeg(p);
+            p=p+1;
+      end
+end
+        
+ det_val=log10(abs(det(eeg1)/(m*n)));
+end
